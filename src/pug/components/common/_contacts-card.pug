@@ -1,0 +1,69 @@
+.contacts-card
+  .grid-x.grid-padding-x.contacts-card__head
+    .cell.auto
+      h4.contacts-card__title Контакты
+    .cell.shrink
+      select.contacts-card__select
+        option(value="online") В сети
+        option(value="offline") Не в сети
+    .cell.shrink
+      button.contacts-card__menu(type="button" data-toggle="card-menu"): i.fa.fa-bars
+      ul.dropdown-pane.card-menu#card-menu(data-dropdown data-position="bottom" data-alignment="center" data-v-offset="20")
+        li.card-menu__item
+          a.card-menu__link(href="#")
+            i.fas.fa-users.card-menu__icon
+            | Контакты
+        li.card-menu__item
+          a.card-menu__link(href="#")
+            i.fas.fa-info.card-menu__icon
+            | Информация
+  .contact-list
+    .contact
+      .contact__head
+        .contact__photo(style="background-image: url(./i/contact-1.png)")
+          span.contact__online
+      .contact__info
+        p.contact__name Алексей Шпорин
+        span.contact__position Руководитель
+      a.button.button_hollow Связаться
+    .contact
+      .contact__head
+        .contact__photo(style="background-image: url(./i/contact-2.png)")
+          span.contact__online
+      .contact__info
+        p.contact__name Алексей Шпорин
+        span.contact__position Руководитель
+      a.button.button_hollow Связаться
+    .contact
+      .contact__head
+        .contact__photo(style="background-image: url(./i/contact-3.png)")
+          span.contact__online
+      .contact__info
+        p.contact__name Алексей Шпорин
+        span.contact__position Руководитель
+      a.button.button_hollow Связаться
+    .contact
+      .contact__head
+        .contact__photo(style="background-image: url(./i/contact-1.png)")
+          span.contact__online
+      .contact__info
+        p.contact__name Алексей Шпорин
+        span.contact__position Руководитель
+      a.button.button_hollow Связаться
+    .contact
+      .contact__head
+        .contact__photo(style="background-image: url(./i/contact-2.png)")
+          span.contact__online
+      .contact__info
+        p.contact__name Алексей Шпорин
+        span.contact__position Руководитель
+      a.button.button_hollow Связаться
+    .contact
+      .contact__head
+        .contact__photo(style="background-image: url(./i/contact-3.png)")
+          span.contact__online
+      .contact__info
+        p.contact__name Алексей Шпорин
+        span.contact__position Руководитель
+      a.button.button_hollow Связаться
+                

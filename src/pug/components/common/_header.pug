@@ -1,0 +1,21 @@
+header.header
+  .grid-container
+    .grid-x.grid-padding-x.align-middle
+      .cell.auto.xlarge-2
+        a(href="#")
+          img.logo(src="./images/logo_head.svg" alt="logo")
+      .cell.shrink.hide-for-xlarge
+        button.header-hamb(type="button"): i.fa.fa-bars    
+      .cell.xlarge-auto
+        .grid-x.grid-padding-x.header-nav-wrapper
+          nav.cell.xlarge-auto
+            button.header-nav-close(type="button") &times;
+            ul.header-nav
+              each i in ['Бизнес', 'Образование', 'События', 'Статьи', 'Новости']
+                li.header-nav__item: a.header-nav__link(href="#")= i
+          .cell.xlarge-6.xlarge-offset-4
+            form.header-search(action="#")
+              input.header-search__input(type="search", name="search", placeholder="Поиск...")
+              button.header-search__button(type="button"): i.fa.fa-angle-down
+          .cell.header__col.header__col_right
+            a.button.button_login.button_bottom(href="#") Вход    

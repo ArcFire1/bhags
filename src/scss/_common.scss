@@ -1,0 +1,30 @@
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  box-shadow: none;
+  border-radius: rem-calc(30);
+
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: none;
+  }
+}
+select {
+  padding: rem-calc(10 25 10 15);
+  line-height: 1;
+  border: rem-calc(1) solid $gray;
+  border-radius: rem-calc(30);
+}

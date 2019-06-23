@@ -1,0 +1,66 @@
+.speaker {
+  display: flex;
+  margin-bottom: rem-calc(40);
+
+  @include breakpoint(medium down) {
+    margin-bottom: rem-calc(20);
+    flex-direction: column;
+  }
+  
+  &__photo {
+    display: block;
+    border: none;
+    border-radius: rem-calc(5);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include breakpoint(medium down) {
+      margin-bottom: rem-calc(20);
+      height: rem-calc(250);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: rem-calc(10);
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem-calc(25);
+  }
+
+  &__average {
+    display: block;
+    margin-right: rem-calc(10);
+    color: $gray;
+  }
+
+  &__name {
+    font-weight: 700;
+    margin-bottom: rem-calc(20);
+    line-height: 1;
+    font-size: rem-calc(18);
+    color: $secondary-color;
+    text-transform: uppercase;
+  }
+
+  &__translate {
+    margin-bottom: rem-calc(20);
+    font-weight: 600;
+    font-style: italic;
+    font-size: rem-calc(20);
+    color: $black;
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: rem-calc(16);
+  }
+}

@@ -1,0 +1,64 @@
+// Roboto Thin
+@font-face {
+  font-family: 'Roboto-webfont';
+  src: url($fontsPath + '/roboto/roboto-thin.woff2') format('woff2'),
+       url($fontsPath + '/roboto/roboto-thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+// Roboto Light
+@font-face {
+  font-family: 'Roboto-webfont';
+  src: url($fontsPath + '/roboto/roboto-light.woff2') format('woff2'),
+       url($fontsPath + '/roboto/roboto-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Roboto Regular
+@font-face {
+  font-family: 'Roboto-webfont';
+  src: url($fontsPath + '/roboto/roboto-regular.woff2') format('woff2'),
+       url($fontsPath + '/roboto/roboto-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Roboto Medium
+@font-face {
+  font-family: 'Roboto-webfont';
+  src: url($fontsPath + '/roboto/roboto-medium.woff2') format('woff2'),
+       url($fontsPath + '/roboto/roboto-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Roboto Medium italic
+@font-face {
+  font-family: 'Roboto-webfont';
+  src: url($fontsPath + '/roboto/roboto-mediumitalic.woff2') format('woff2'),
+       url($fontsPath + '/roboto/roboto-mediumitalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+// Roboto Bold
+@font-face {
+  font-family: 'Roboto-webfont';
+  src: url($fontsPath + '/roboto/roboto-bold.woff2') format('woff2'),
+       url($fontsPath + '/roboto/roboto-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Roboto Black
+@font-face {
+  font-family: 'Roboto-webfont';
+  src: url($fontsPath + '/roboto/roboto-black.woff2') format('woff2'),
+       url($fontsPath + '/roboto/roboto-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+$font-roboto: 'Roboto-webfont', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;

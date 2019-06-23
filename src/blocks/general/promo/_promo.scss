@@ -1,0 +1,52 @@
+.promo {
+  position: relative;
+  margin-bottom: rem-calc(10);
+  width: 100%;
+  height: rem-calc(450);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: rem-calc(5);
+
+  @include breakpoint(small down) {
+    height: rem-calc(250);
+  }
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    opacity: 0;
+    border-radius: rem-calc(5);
+    transition: 0.3s ease;
+    z-index: 1;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    &:after {
+      opacity: 0.78;
+    }
+
+    .promo__link {
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s ease;
+    z-index: 2;
+  }
+}

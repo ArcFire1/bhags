@@ -1,0 +1,116 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: rem-calc(20);
+
+  &__head {
+    position: relative;
+    height: rem-calc(140);
+    width: 100%;
+    margin-bottom: rem-calc(20);
+  }
+
+  &__photo {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: rem-calc(80);
+    width: rem-calc(80);
+    border: rem-calc(3) solid $white;
+    border-radius: 50%;
+    background-color: rgb(15, 149, 223);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rem-calc(0 2 4 0) rgba(50, 10, 20, 0.31);
+    transition: 0.3s ease;
+  }
+
+  &__online,
+  &__offline {
+    display: block;
+    position: absolute;
+    right: rem-calc(0);
+    bottom: rem-calc(8);
+    height: rem-calc(11);
+    width: rem-calc(11);
+    border: rem-calc(1) solid $white;
+    border-radius: 50%;
+    background-color: $gray;
+    transition: 0.3s ease;
+  }
+
+  &__online {
+    background-color: $tertiary;
+  }
+
+  &__info {
+    margin-bottom: rem-calc(30);
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: rem-calc(16);
+    color: $black;
+    margin-bottom: rem-calc(12);
+
+    @include breakpoint(small down) {
+      font-size: rem-calc(14); 
+    }
+  }
+
+  &__position {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: rem-calc(14);
+    color: $light-gray;
+
+    @include breakpoint(small down) {
+      font-size: rem-calc(12); 
+    }
+  }
+
+  .button {
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  &.slick-current {
+    .contact__photo {
+      height: rem-calc(140);
+      width: rem-calc(140);
+    }
+
+    .contact__online,
+    .contact__offline {
+      display: block;
+      position: absolute;
+      right: rem-calc(6);
+      bottom: rem-calc(12);
+      height: rem-calc(19);
+      width: rem-calc(19);
+      border: rem-calc(1) solid $white;
+      border-radius: 50%;
+      background-color: $gray
+    }
+
+    .contact__online {
+      background-color: $tertiary;
+    }
+
+    .contact__info {
+      opacity: 1;
+    }
+
+    .button {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.card-menu {
+  padding: rem-calc(10 0);
+  box-shadow: rem-calc(0 0 5 0) rgba(95, 95, 95, 0.27);
+  border: none;
+  border-radius: rem-calc(5);
+  list-style: none;
+  background-color: $white;
+  width: auto;
+
+  &__item {
+  
+  }
+
+  &__link {
+    display: block;
+    padding-right: rem-calc(25);
+    color: $black;
+    transition: 0.3s ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $secondary-color;
+      background-color: $light-secondary;
+    }
+  }
+
+  &__icon {
+    width: rem-calc(40) !important;
+  }
+}

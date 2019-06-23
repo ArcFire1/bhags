@@ -1,0 +1,81 @@
+.button {
+  padding: rem-calc(11 42);
+  border: rem-calc(1) solid $primary-color;
+  background-color: $primary-color;
+  border-radius: rem-calc(30);
+  font-weight: 400;
+  font-size: rem-calc(16);
+  color: $white;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: scale-color($primary-color, $lightness: -20%);
+    border-color: scale-color($primary-color, $lightness: -20%);
+  }
+
+  &_action {
+    font-weight: 500;
+    font-size: rem-calc(18);
+    border-color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $white;
+      border-color: $white;
+      color: $black;
+    }
+  }
+
+  &_login {
+    padding: rem-calc(11 35);
+    border-color: $white;
+    background-color: $white;
+    font-weight: 100;
+    font-size: rem-calc(14);
+    color: $black;
+    box-shadow: rem-calc(0 1 3 0) rgba(50, 10, 20, 0.1);
+
+    @include breakpoint(large down) {
+      width: 100%;
+      margin: rem-calc(20);
+    }
+  }
+
+  &_bottom {
+    margin-bottom: 0;
+  }
+
+  &_hollow {
+    border-color: $secondary-color;
+    background-color: $white;
+    color: $secondary-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $secondary-color;
+      background-color: $secondary-color;
+      color: $white;
+    }
+  }
+
+  &_more {
+    font-weight: 600;
+    font-size: rem-calc(14);
+    border-color: $primary-color;
+    background-color: $white;
+    color: $primary-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $primary-color;
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+}

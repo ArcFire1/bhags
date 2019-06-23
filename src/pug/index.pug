@@ -1,0 +1,92 @@
+doctype html
+html.no-js(lang='ru')
+  include components/service/_head
+  body
+    //- mixins
+
+    include components/common/_header
+
+    .grid-container
+      .grid-x.grid-padding-x
+        .cell.large-14.xlarge-15
+          .promo(href="#" style="background-image: url(./i/forbes.jpg)")
+            a.button.button_action.promo__link(href="#") Вебсайт
+        .cell.large-auto.xlarge-9
+          include components/common/_contacts-card
+        .cell
+          .card.card_cover(style="background-image: url(./i/card-cover.jpg)")
+            h2.card__title Forbes.
+            h3.card__subtitle Russia Tech Investment Summit
+              span.card__subhead Поговорим об инвестициях в технологии
+            p.card__text 26 сентября Forbes Россия проведет Russian Tech Investment Summit. Знаковое событие в сфере инвестиций соберет владельцев частных капиталов, профессиональных инвесторов, основателей компаний, экспертов отрасли, а также технологичные стартапы. Собравшиеся обсудят перспективные направления для инвестиций в технологическом секторе, кейсы по построению стратегии сотрудничества инвесторов и корпоративных фондов, лучшие практики инвестиций через краудинвестинговые площадки. Параллельно основной программе конференции после соответствующей панели будут проходить elevator pitch по следующим направлениям: FoodTech, EdTech, AI, MedTech, B2B / Industry 4.0, Игры и киберспорт, Cybersecurity, Transport/Mobility
+        .cell
+          .card.card_bordered
+            h2.card__title Вы узнаете
+            .grid-x.grid-padding-x
+              .cell.large-auto
+                p.card__text Какие направления для инвестиций выбрать в технологическом секторе
+                p.card__text Как построить взаимовыгодную стратегию сотрудничества инвесторов и корпоративных фондов
+              .cell.large-auto
+                p.card__text Как сделать успешный выход из проекта в условиях ограниченного количества покупателей
+                p.card__text Как большим компаниям ускорить свое развитие за счет инвестиций в высокотехнологичные стартапы
+              .cell.large-auto
+                p.card__text Как стать успешным бизнес ангелом и какие стратегии ангельских инвестиций в России преобладают
+                p.card__text Как стартапу масштабироваться в других странах и привлечь западных инвесторов
+
+        .cell
+          .card.card_speakers
+            h2.card__title Спикеры
+            .grid-x.grid-padding-x(data-equalizer="speaker")
+              .cell.medium-auto
+                .speaker(data-equalizer-watch="speaker")
+                  .speaker__photo(style="background-image: url(./i/speaker.jpg)")
+                  .speaker__content
+                    .speaker__rating
+                      span.speaker__average 4.5
+                      .stars
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 50%;")
+                      
+                    h5.speaker__name Гранд Кардон
+                    p.speaker__translate Grant Cardone Hartmann Holdings
+                    p.speaker__info Инвестор
+                    a.button.button_more Подробнее
+              .cell.medium-auto
+                .speaker(data-equalizer-watch="speaker")
+                  .speaker__photo(style="background-image: url(./i/speaker.jpg)")
+                  .speaker__content
+                    .speaker__rating
+                      span.speaker__average 4.5
+                      .stars
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 50%;")
+                    h5.speaker__name Гранд Кардон
+                    p.speaker__translate Grande Cardone
+                    p.speaker__info Инвестор, строительный магнат
+                    a.button.button_more Подробнее
+              .cell.medium-auto
+                .speaker(data-equalizer-watch="speaker")
+                  .speaker__photo(style="background-image: url(./i/speaker.jpg)")
+                  .speaker__content
+                    .speaker__rating
+                      span.speaker__average 4.5
+                      .stars
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 100%;")
+                        i.stars__out: i.stars__in(style="width: 50%;")
+                    h5.speaker__name Гранд Кардон
+                    p.speaker__translate Grande Cardone
+                    p.speaker__info Инвестор, строительный магнат
+                    a.button.button_more Подробнее
+              .cell.text-center
+                a.more(href="#") Показать все      
+
+    include components/service/_js

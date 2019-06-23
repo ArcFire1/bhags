@@ -1,0 +1,13 @@
+.more {
+  margin-top: rem-calc(20);
+  color: $primary-color;
+  transition: 0.3s ease;
+  border-bottom: rem-calc(1) solid $primary-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: scale-color($primary-color, $lightness: -20%);
+    border-color: scale-color($primary-color, $lightness: -20%);;
+  }
+}

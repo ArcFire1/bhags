@@ -1,0 +1,30 @@
+.stars {
+  display: flex;
+
+  &__out {
+    display: block;
+    position: relative;
+    margin-right: 5px;
+    width: rem-calc(15);
+    height: rem-calc(15);
+    background-image: url($imagesPath + "/star.svg");
+    background-position: left;
+    background-size: rem-calc(15);
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &__in {
+    display: block;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background-image: url($imagesPath + "/star-colored.svg");
+    background-position: left;
+    background-size: rem-calc(15);
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
